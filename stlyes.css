@@ -5,12 +5,12 @@ body {
     line-height: 1.6;
     display: flex;
     background-color: #111; 
-    color: yellow;
+    color: rgb(255, 145, 0);
 }
 
 header {
     background-color: #111;
-    color: yellow; 
+    color: rgb(255, 145, 0);
     text-align: center;
     padding: 2rem 0;
     width: 100%;
@@ -18,7 +18,7 @@ header {
 
 .sidebar {
     background-color: #111;
-    color: yellow; 
+    color:  rgb(255, 145, 0);
     width: 200px;
     padding: 1rem;
     position: fixed;
@@ -32,7 +32,7 @@ header {
 }
 
 .sidebar a {
-    color: #ff0; 
+    color: rgb(255, 145, 0);
     background-color: #000; 
     padding: 15px 20px; 
     font-size: 1.2rem;
@@ -61,8 +61,8 @@ main {
 }
 
 .content h2 {
-    color: yellow;
-    border-bottom: 2px solid yellow;
+    color: rgb(255, 145, 0);
+    border-bottom: 2px solid rgb(255, 145, 0);;
     padding-bottom: 0.5rem;
     font-size: 1.8rem; 
 }
@@ -86,8 +86,7 @@ ul li {
 }
 
 a {
-    color: #ff0; 
-    background-color: #000; 
+    color: rgb(255, 145, 0);
     text-decoration: none;
 }
 
