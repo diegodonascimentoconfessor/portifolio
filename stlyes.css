@@ -1,34 +1,86 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    display: flex;
 }
 
 header {
     background-color: #333;
-    color: white;
+    color: rgb(7, 6, 6);
     text-align: center;
-    padding: 1rem 0;
+    padding: 2rem 0;
+    width: 100%;
 }
 
 header h1 {
-    margin: 0;
-}
+    margin-left: 220px;
+    font-size: 20px;
 
+}
 header p {
+    margin-left: 220px;
+    font-size: 20px;
+}
+
+.sidebar {
+    background-color: #111;
+    color: #111;
+    width: 200px;
+    padding: 1rem;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.sidebar-image img {
+    max-width: 100%;
+    border-radius: 50%; 
+}
+
+.sidebar a {
+    color: #ff0; 
+    background-color: #000; 
+    padding: 15px 20px; 
     font-size: 1.2rem;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem; 
 }
 
-section {
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+main {
+    margin-left: 200px;
     padding: 1rem 2rem;
+    width: calc(100% - 200px);
 }
 
-section h2 {
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+
+.content h2 {
     color: #333;
     border-bottom: 2px solid #333;
     padding-bottom: 0.5rem;
+    font-size: 1.8rem; 
+}
+
+.content h3 {
+    font-size: 1.5rem; 
+}
+
+.content p,
+.content li {
+    font-size: 1.4rem; 
 }
 
 ul {
@@ -41,10 +93,52 @@ ul li {
 }
 
 a {
-    color: #333;
+    color: #ff0; 
+    background-color: #000; 
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    background-color: #111; 
+    color: yellow; 
+}
+
+header {
+    background-color: #111;
+    color: yellow; 
+    text-align: center;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.sidebar {
+    background-color: #111;
+    color: yellow; 
+    width: 200px;
+    padding: 1rem;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+}
+
+main {
+    margin-left: 200px;
+    padding: 1rem 2rem;
+    width: calc(100% - 200px);
+    color: yellow; 
+}
+
+.content h2, .content h3, .content p, .content li {
+    color: yellow;
 }
