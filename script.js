@@ -1,8 +1,13 @@
-function showSection(id) {
-    var sections = document.querySelectorAll('section');
-    sections.forEach(section => {
-        section.classList.remove('active');
+function showSection(sectionId) {
+    const contents = document.querySelectorAll('.content');
+    contents.forEach(content => {
+        content.classList.remove('active');
     });
-    document.getElementById(id).classList.add('active');
+    
+    const activeSection = document.getElementById(sectionId);
+    if (activeSection) {
+        activeSection.classList.add('active');
+    }
 }
+
 

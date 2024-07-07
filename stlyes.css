@@ -4,29 +4,21 @@ body {
     padding: 0;
     line-height: 1.6;
     display: flex;
+    background-color: #111; 
+    color: yellow;
 }
 
 header {
-    background-color: #333;
-    color: rgb(7, 6, 6);
+    background-color: #111;
+    color: yellow; 
     text-align: center;
     padding: 2rem 0;
     width: 100%;
 }
 
-header h1 {
-    margin-left: 220px;
-    font-size: 20px;
-
-}
-header p {
-    margin-left: 220px;
-    font-size: 20px;
-}
-
 .sidebar {
     background-color: #111;
-    color: #111;
+    color: yellow; 
     width: 200px;
     padding: 1rem;
     position: fixed;
@@ -61,6 +53,7 @@ main {
 
 .content {
     display: none;
+    text-align: center; 
 }
 
 .content.active {
@@ -68,8 +61,8 @@ main {
 }
 
 .content h2 {
-    color: #333;
-    border-bottom: 2px solid #333;
+    color: yellow;
+    border-bottom: 2px solid yellow;
     padding-bottom: 0.5rem;
     font-size: 1.8rem; 
 }
@@ -80,7 +73,7 @@ main {
 
 .content p,
 .content li {
-    font-size: 1.4rem; 
+    font-size: 1.0rem; 
 }
 
 ul {
@@ -101,44 +94,4 @@ a {
 a:hover {
     text-decoration: underline;
 }
-
-
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    display: flex;
-    background-color: #111; 
-    color: yellow; 
-}
-
-header {
-    background-color: #111;
-    color: yellow; 
-    text-align: center;
-    padding: 2rem 0;
-    width: 100%;
-}
-
-.sidebar {
-    background-color: #111;
-    color: yellow; 
-    width: 200px;
-    padding: 1rem;
-    position: fixed;
-    height: 100%;
-    overflow-y: auto;
-}
-
-main {
-    margin-left: 200px;
-    padding: 1rem 2rem;
-    width: calc(100% - 200px);
-    color: yellow; 
-}
-
-.content h2, .content h3, .content p, .content li {
-    color: yellow;
-}
+ 
